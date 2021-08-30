@@ -19,6 +19,11 @@ def main(script):
 
     script: string script name
     """
+    resp = nsfg.ReadFemPreg()
+
+    print(resp.pregnum.value_counts().sort_index())
+
+
     print('%s: All tests passed.' % script)
 
 
